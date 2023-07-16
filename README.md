@@ -18,4 +18,8 @@ As instruções são:
 4. O único critério para considerar o requisito como completo é que os critérios de aceite de cada requisito tenham sido cumpridos. A análise do código será feita somente para os projetos que estiverem com 100% dos requisitos completos.
 5. Crie uma branch nova para cada novo requisito com base na branch do requisito anterior.
 
+Algo que é importante vocês terem em mente durante a execução dos requisitos: 
+
+## **"Nosso dever é sempre propor, mas nunca supor"**
+
 Bons estudos! =]
