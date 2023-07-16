@@ -1,3 +1,5 @@
+# :warning: LEIA O README ANTES DE VER AS ISSUES :warning:
+
 # Introdução
 
 O objetivo desse desafio é apresentar uma sequência de requisitos que são comumente utilizados no dia a dia de desenvolvimento de software na maioria dos projetos.
