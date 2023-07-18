@@ -29,6 +29,20 @@ services:
     networks:
       - desafio
 
+  webApi:
+    container_name: MarceloCastelo.Desafio.ApiProdutos.WebApi.Development
+    hostname: MarceloCastelo.Desafio.ApiProdutos.WebApi.Development
+    build: 
+      context: ../.
+      dockerfile: MarceloCastelo.Desafio.ApiProdutos.WebApi.Development.Dockerfile
+    tty: true
+    ports: 
+      - "5000:5000"
+    depends_on:
+      - postgres
+      - pgadmin 
+    networks: 
+      - desafio
 
 networks:
   desafio:
