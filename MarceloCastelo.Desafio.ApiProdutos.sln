@@ -5,6 +5,11 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarceloCastelo.Desafio.ApiProdutos.WebApi", "src\MarceloCastelo.Desafio.ApiProdutos.WebApi\MarceloCastelo.Desafio.ApiProdutos.WebApi.csproj", "{98D76265-174A-4C19-98D4-66F1AC9757B1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{49B84C01-4BC2-4E53-8B7C-392A9D1BC05F}"
+	ProjectSection(SolutionItems) = preProject
+		devops\docker-compose.yaml = devops\docker-compose.yaml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +23,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7CCD9F33-DAC8-4280-A8E5-2FD5D7067FC4}
 	EndGlobalSection
 EndGlobal

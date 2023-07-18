@@ -1,0 +1,35 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres
+    hostname: postgres
+    container_name: MarceloCastelo.Desafio.ApiProdutos.Postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 1234
+    restart: always
+    networks: 
+      - desafio
+  
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    hostname: pgadmin
+    container_name: MarceloCastelo.Desafio.ApiProdutos.Postgres.Admin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "otavio@otavio.com"
+      PGADMIN_DEFAULT_PASSWORD: "123456"
+    ports:
+      - "80:80"
+    restart: always
+    links:
+      - postgres
+    depends_on:
+      - postgres
+    networks:
+      - desafio
+
+
+networks:
+  desafio:
+    driver: bridge  
